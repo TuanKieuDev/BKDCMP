@@ -23,10 +23,12 @@ const style=`
     border-radius: 4px;
     cursor: pointer;
     outline: none;
+    
     }
 
     #browser:focus{
         border-color: #409eff;
+        
     }
 
     #browser2:focus{

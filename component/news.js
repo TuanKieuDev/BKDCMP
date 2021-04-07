@@ -82,6 +82,18 @@ const style=`
     .slide img{
         height: 97%;
     }
+
+    @media screen and (max-width: 767px){
+        .container{
+            display:contents;
+        }
+        .left-column{
+            width:100%;
+        }
+        .right-column{
+            width:100%;
+        }
+    }
 `
 
 class News extends HTMLElement{

@@ -56,6 +56,7 @@ class Card extends HTMLElement{
         this.location=this.getAttribute('location');
         this.gross=this.getAttribute('gross');  
         this._shadowRoot.innerHTML=`
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>${style}</style>
         <div class="sub-container">
             <div class="main-content">
@@ -66,8 +67,10 @@ class Card extends HTMLElement{
                     <h3 class="h3">${this.title}</h3>
                     <div class="name-company">${this.detail}</div>
                     <div class="benefit">
-                        <div class="location">${this.location}</div>
-                        <div class="gross">${this.gross}</div>
+                        <div class="location"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        ${this.location}</div>
+                        <div class="gross"><i class="fa fa-usd" aria-hidden="true"></i>
+                        ${this.gross}</div>
                     </div>
                 </div>
             </div>

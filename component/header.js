@@ -39,6 +39,17 @@ const style=`
     .name{
         font-size:16px;
     }
+    @media screen and (max-width: 767px){
+        .header{
+            padding: 10px 5px 20px;
+        max-width: 100%;
+        display:grid
+        }
+        .info{
+            right:auto;
+            position:inherit;
+        }
+    }
 `
 
 class BKHeader extends HTMLElement{
